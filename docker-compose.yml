@@ -3,7 +3,7 @@ version: '3.9'
 services:
   db:
     container_name: pg_db
-    image: postgres:14-alphine
+    image: postgres:latest
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
@@ -20,4 +20,4 @@ services:
       PGADMIN_DEFAULT_EMAIL: noemail@noemail.com
       PGADMIN_DEFAULT_PASSWORD: root
     ports:
-      - '5050:50'
+      - '5050:80'
